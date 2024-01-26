@@ -1,0 +1,15 @@
+<ion-content>
+  <ion-item>
+    <ion-label>ID:</ion-label>
+    <!-- Input para ingresar el ID del Pokémon -->
+    <ion-input [(ngModel)]="pokemonId" type="number"></ion-input>
+  </ion-item>
+
+  <ion-button (click)="getPokemonDataID(pokemonId)">Get Details by ID</ion-button>
+
+  <!-- Muestra el nombre del Pokémon obtenido -->
+  <ion-item >
+    <ion-label>Result:</ion-label>
+    <ion-text>{{ pokemon?.name }}</ion-text>
+  </ion-item>
+</ion-content>
